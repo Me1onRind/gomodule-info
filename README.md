@@ -18,7 +18,7 @@ Plug 'Me1onRind/gomodule-info'
 
 ### GoModuleName()
 
-Retrun current editing file's go module name. It will lookup parent directory util find out go.mod or arrive root directory.
+Retrun current editing file's go module name. It will lookup parent directory until find out go.mod or arrive root directory.
 
 ## configure
 
