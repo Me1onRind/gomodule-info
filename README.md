@@ -14,7 +14,7 @@ You can configure shortcuts to insert import path prefix quickly.
 Plug 'Me1onRind/gomodule-info'
 ```
 
-## Provider function
+## Provide functions
 
 ### GoModuleName()
 
