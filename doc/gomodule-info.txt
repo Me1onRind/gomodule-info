@@ -1,1 +1,37 @@
-    todo
+*gomodule-info.txt*					Provider function to get go module info
+
+
+
+Author: Me1onRind  <320314319@qq.com>
+License: MIT license
+
+
+
+CONTENTS   									*gomodule-info-contents*
+Introduction								|gomodule-info-introduction|
+functions 									|gomodule-info-functions|
+
+
+==============================================================================
+INTRODUCTION 									  *gomodule-info-introduction*
+
+Only provider functions to get info. You can configure persion function and shortcuts to convenient yourself.
+
+Example: >
+
+function InsertGomoduleImportItem()
+    let str = "\t\"" . GoModuleName() ."/\""
+    call append(line('.'), l:str)
+    normal j$
+    startinsert
+endfunction
+
+nmap gii :call InsertGomoduleImportItem()<CR>
+
+
+==============================================================================
+FUNCTIONS 									         *gomodule-info-functions*
+
+"GoModuleName()"
+
+	Retrun current editing file's go module name. It will lookup parent directory util find out go.mod or arrive root directory.
